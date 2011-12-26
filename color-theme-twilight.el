@@ -85,6 +85,7 @@
 	  (font-lock-keyword-face ((t (:foreground "#CDA869"))))
 	  (font-lock-preprocessor-face ((t (:foreground "Aquamarine"))))
 	  (font-lock-reference-face ((t (:foreground "SlateBlue"))))
+	  (fringe-face ((t (:background "#121212"))))
 
 	  ;; Enhanced-Ruby-Mode
 	  (ruby-string-delimiter-face  ((t (:foreground "#5A6340"))))

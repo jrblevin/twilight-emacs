@@ -77,6 +77,7 @@
 	  (blue ((t (:foreground "blue"))))
 	  (border-glyph ((t (nil))))
 	  (buffers-tab ((t (:background "#141414" :foreground "#CACACA"))))
+          (font-lock-warning-face ((t (:background "#EE799F" :foreground "black"))))
 	  (font-lock-builtin-face ((t (:foreground "#CACACA"))))
 	  (font-lock-comment-face ((t (:foreground "#5F5A60"))))
 	  (font-lock-constant-face ((t (:foreground "#CF6A4C"))))
@@ -85,7 +86,6 @@
 	  (font-lock-keyword-face ((t (:foreground "#CDA869"))))
 	  (font-lock-preprocessor-face ((t (:foreground "Aquamarine"))))
 	  (font-lock-reference-face ((t (:foreground "SlateBlue"))))
-	  (fringe-face ((t (:background "#121212"))))
 
 	  ;; Enhanced-Ruby-Mode
 	  (ruby-string-delimiter-face  ((t (:foreground "#5A6340"))))
@@ -102,7 +102,9 @@
 	  (ido-only-match ((t (:foreground "#8F9D6A"))))
 	  (mumamo-background-chunk-submode ((t (:background "#222222")))) 
 
+          (fringe ((t (:background "black" :foreground "grey55"))))
 	  (linum ((t (:background "#141314" :foreground "#2D2B2E"))))
+          (linum-highlight-face ((t (:inherit linum-face :foreground "yellow"))))
 	  (hl-line ((t (:background "#212121"))))  
           (region ((t (:background "#373446"))))
 	  (yas/field-highlight-face ((t (:background "#27292A"))))

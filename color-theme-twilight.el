@@ -116,8 +116,11 @@
           (org-clock-overlay ((t (:foreground "#fff"))))
           (outline-4 ((t (:foreground "#8F8A80"))))
 
-          (diff-removed ((((class color) (background dark)) (:foreground "orange"))))
-          (diff-added ((((class color) (background dark)) (:foreground "green"))))
+          (diff-header ((t (:background "#5F5A60"))))
+          (diff-file-header ((t (:inherit diff-header))))
+          (diff-removed ((t (:background "#CF6A4C"))))
+          (diff-changed ((t (:background "#CDA869"))))
+          (diff-added ((t (:background  "#8F9D6A"))))
 
 	  (font-lock-string-face ((t (:foreground "#8F9D6A"))))
 	  (font-lock-type-face ((t (:foreground "#9B703F"))))

@@ -125,6 +125,7 @@
 	  (font-lock-warning-face ((t (:background "#EE799F" :foreground "red"))))
 	  (gui-element ((t (:background "#D4D0C8" :foreground "black"))))
 	  (region ((t (:background "#27292A"))))
+	  (shadow ((t (:foreground "#4b474c"))))
 	  (highlight ((t (:background "#111111"))))
 	  (highline-face ((t (:background "SeaGreen"))))
 	  (left-margin ((t (nil))))

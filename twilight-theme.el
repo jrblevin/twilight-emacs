@@ -43,7 +43,7 @@
 ;; Defines a colour scheme resembling that of the original TextMate
 ;; Twilight colour theme.  To use add the file to your
 ;; `custom-theme-directory' and run `M-x customize-themes'.
-;; Alternatively, you may add add the following to your init file:
+;; Alternatively, you may add the following to your init file:
 ;;
 ;;     (load-theme 'twilight t)
 ;;

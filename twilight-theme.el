@@ -149,4 +149,7 @@
 
 (provide-theme 'twilight)
 
+;; Local Variables:
+;; eval: (when (require 'rainbow-mode nil t) (rainbow-mode 1))
+;; End:
 ;;; twilight-theme.el ends here

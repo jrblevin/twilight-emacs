@@ -70,7 +70,7 @@
 	  ((background-color . "#141414")
 		(background-mode . dark)
 		(border-color . "black")
-		(cursor-color . "#DDDD00")
+		(cursor-color . "#CDA869")
 		(foreground-color . "#F8F8F8")
 		(mouse-color . "sienna1"))
 	  (default ((t (:background "#141414" :foreground "#CACACA"))))
@@ -84,7 +84,7 @@
 	  (font-lock-doc-string-face ((t (:foreground "DarkOrange"))))
 	  (font-lock-function-name-face ((t (:foreground "#9B703F"))))
 	  (font-lock-keyword-face ((t (:foreground "#CDA869"))))
-	  (font-lock-preprocessor-face ((t (:foreground "Aquamarine"))))
+	  (font-lock-preprocessor-face ((t (:foreground "#9B859D"))))
 	  (font-lock-reference-face ((t (:foreground "SlateBlue"))))
 
 	  ;; Enhanced-Ruby-Mode

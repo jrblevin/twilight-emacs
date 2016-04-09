@@ -77,6 +77,7 @@
 	  (blue ((t (:foreground "blue"))))
 	  (border-glyph ((t (nil))))
 	  (buffers-tab ((t (:background "#141414" :foreground "#CACACA"))))
+          (font-lock-warning-face ((t (:background "#EE799F" :foreground "black"))))
 	  (font-lock-builtin-face ((t (:foreground "#CACACA"))))
 	  (font-lock-comment-face ((t (:foreground "#5F5A60"))))
 	  (font-lock-constant-face ((t (:foreground "#CF6A4C"))))
@@ -101,7 +102,9 @@
 	  (ido-only-match ((t (:foreground "#8F9D6A"))))
 	  (mumamo-background-chunk-submode ((t (:background "#222222")))) 
 
+          (fringe ((t (:background "black" :foreground "grey55"))))
 	  (linum ((t (:background "#141314" :foreground "#2D2B2E"))))
+          (linum-highlight-face ((t (:inherit linum :foreground "yellow"))))
 	  (hl-line ((t (:background "#212121"))))  
           (region ((t (:background "#373446"))))
 	  (yas/field-highlight-face ((t (:background "#27292A"))))
@@ -111,6 +114,7 @@
           (magit-item-highlight ((t (:background "#191930"))))
           (magit-diff-add ((((class color) (background dark)) (:foreground "green"))))
           (org-hide ((((background dark)) (:foreground "#141414"))))
+          (org-clock-overlay ((t (:foreground "#fff"))))
           (outline-4 ((t (:foreground "#8F8A80"))))
 
           (diff-removed ((((class color) (background dark)) (:foreground "orange"))))

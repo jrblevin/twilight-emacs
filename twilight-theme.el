@@ -60,7 +60,7 @@
 (custom-theme-set-faces
  'twilight
  '(default ((t (:background "#141414" :foreground "#F8F8F8"))))
- '(cursor ((t (:foreground "#CDA869"))))
+ '(cursor ((t (:background "#CDA869"))))
  '(blue ((t (:foreground "blue"))))
  '(border-glyph ((t (nil))))
  '(buffers-tab ((t (:background "#141414" :foreground "#CACACA"))))

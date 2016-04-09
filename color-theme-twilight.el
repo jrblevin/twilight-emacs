@@ -106,7 +106,6 @@
 	  (linum ((t (:background "#141314" :foreground "#2D2B2E"))))
           (linum-highlight-face ((t (:inherit linum :foreground "yellow"))))
 	  (hl-line ((t (:background "#212121"))))  
-          (region ((t (:background "#373446"))))
 	  (yas/field-highlight-face ((t (:background "#27292A"))))
 	  (mode-line ((t (:background "grey75" :foreground "black" :height 0.8))))
           (mode-line-inactive ((t (:background "grey10" :foreground "grey40" :box (:line-width -1 :color "grey20") :height 0.8))))

@@ -8,7 +8,7 @@
 ;; Adapted-By: Yesudeep Mangalapilly
 ;; Keywords: textmate twilight color theme
 ;; URL: https://github.com/jrblevin/twilight-emacs
-;; Version: 1.0
+;; Version: 1.1
 
 ;; This file is NOT a part of GNU Emacs.
 
@@ -57,95 +57,127 @@
 (deftheme twilight
   "TextMate Twilight theme for GNU Emacs.")
 
-(custom-theme-set-faces
- 'twilight
- '(default ((t (:background "#141414" :foreground "#F8F8F8"))))
- '(cursor ((t (:background "#CDA869"))))
- '(blue ((t (:foreground "blue"))))
- '(border-glyph ((t (nil))))
- '(buffers-tab ((t (:background "#141414" :foreground "#CACACA"))))
+(let ((tw-bg-2        "#000000")
+      (tw-bg-1        "#111111")
+      (tw-bg          "#141414")
+      (tw-bg+2        "#212121")
+      (tw-bg+3        "#313131")
+      (tw-bg+4        "#4b474c")
+      (tw-bg+5        "#5f5a60")
+      (tw-bg+8        "#8f8a80")
+      (tw-fg-d        "#d4d0c8")
+      (tw-fg-c        "#cacaca")
+      (tw-fg          "#f8f8f8")
+      (tw-wt          "#ffffff")
+      (tw-rd-1        "#a3472c")
+      (tw-rd          "#cf6a4c")
+      (tw-mg-1        "#ef2929")
+      (tw-mg          "#ee799f")
+      (tw-dark-org    "#9b703f")
+      (tw-med-org     "#efa510")
+      (tw-light-org   "#f2b73f")
+      (tw-pale-org    "#cda869")
+      (tw-dark-grn-1  "#5a6340")
+      (tw-dark-grn    "#646d4a")
+      (tw-med-grn     "#8f9d6a")
+      (tw-blu-1       "#5d6c84")
+      (tw-blu         "#7587A6")
+      (tw-cy-1        "#41595c")
+      (tw-cy          "#5d8084")
+      (tw-pale-pur    "#89788a")
+      (tw-med-pur     "#9b859d"))
 
- '(font-lock-warning-face ((t (:background "#EE799F" :foreground "black"))))
- '(font-lock-builtin-face ((t (:foreground "#CACACA"))))
- '(font-lock-comment-face ((t (:foreground "#5F5A60"))))
- '(font-lock-constant-face ((t (:foreground "#CF6A4C"))))
- '(font-lock-doc-string-face ((t (:foreground "DarkOrange"))))
- '(font-lock-function-name-face ((t (:foreground "#9B703F"))))
- '(font-lock-keyword-face ((t (:foreground "#CDA869"))))
- '(font-lock-preprocessor-face ((t (:foreground "#CF6A4C"))))
- '(font-lock-reference-face ((t (:foreground "SlateBlue"))))
- '(font-lock-string-face ((t (:foreground "#8F9D6A"))))
- '(font-lock-type-face ((t (:foreground "#89788a"))))
- '(font-lock-variable-name-face ((t (:foreground "#7587A6"))))
- '(font-lock-warning-face ((t (:background "#EE799F" :foreground "red"))))
- '(font-lock-regexp-grouping-backslash ((t (:foreground "#E9C062"))))
- '(font-lock-regexp-grouping-construct ((t (:foreground "red"))))
+  (custom-theme-set-variables
+   'twilight
+   '(frame-brackground-mode (quote dark)))
 
- '(minibuffer-prompt ((t (:foreground "#5F5A60"))))
- '(fringe ((t (:background "black" :foreground "grey55"))))
- '(linum ((t (:background "#141314" :foreground "#2D2B2E"))))
- '(linum-highlight-face ((t (:inherit linum :foreground "yellow"))))
- '(hl-line ((t (:background "#212121"))))
- '(mode-line ((t (:background "grey75" :foreground "black" :height 0.8))))
- '(mode-line-inactive ((t (:background "grey10" :foreground "grey40" :box (:line-width -1 :color "grey20") :height 0.8))))
- '(gui-element ((t (:background "#D4D0C8" :foreground "black"))))
- '(region ((t (:background "#27292A"))))
- '(shadow ((t (:foreground "#4b474c"))))
- '(highlight ((t (:background "#111111"))))
- '(highline-face ((t (:background "SeaGreen"))))
- '(left-margin ((t (nil))))
- '(text-cursor ((t (:background "yellow" :foreground "black"))))
- '(toolbar ((t (nil))))
- '(underline ((nil (:underline nil))))
- '(yas/field-highlight-face ((t (:background "#27292A"))))
- '(mumamo-background-chunk-submode ((t (:background "#222222"))))
- '(zmacs-region ((t (:background "snow" :foreground "blue"))))
+  (custom-theme-set-faces
+   'twilight
+   `(default ((t (:background ,tw-bg :foreground ,tw-fg))))
+   `(cursor ((t (:background ,tw-pale-org))))
+   `(buffers-tab ((t (:background ,tw-bg :foreground ,tw-fg-c))))
 
- ;; Ido
- '(ido-subdir ((t (:foreground "#CF6A4C"))))
- '(ido-first-match ((t (:foreground "#8F9D6A"))))
- '(ido-only-match ((t (:foreground "#8F9D6A"))))
+   `(font-lock-warning-face ((t (:background ,tw-mg :foreground ,tw-bg-2))))
+   `(font-lock-builtin-face ((t (:foreground ,tw-fg-c))))
+   `(font-lock-comment-face ((t (:foreground ,tw-bg+5))))
+   `(font-lock-comment-delimiter-face ((t (:foreground ,tw-bg+5))))
+   `(font-lock-constant-face ((t (:foreground ,tw-rd))))
+   `(font-lock-doc-string-face ((t (:foreground ,tw-med-org))))
+   `(font-lock-function-name-face ((t (:foreground ,tw-dark-org))))
+   `(font-lock-keyword-face ((t (:foreground ,tw-pale-org))))
+   `(font-lock-preprocessor-face ((t (:foreground ,tw-rd))))
+   `(font-lock-string-face ((t (:foreground ,tw-med-grn))))
+   `(font-lock-type-face ((t (:foreground ,tw-pale-pur))))
+   `(font-lock-variable-name-face ((t (:foreground ,tw-blu))))
+   `(font-lock-warning-face ((t (:background ,tw-mg :foreground ,tw-mg-1))))
+   `(font-lock-reference-face ((t (:inherit font-lock-constant-face)))) ; obsolete
+   `(font-lock-regexp-grouping-backslash ((t (:foreground ,tw-light-org))))
+   `(font-lock-regexp-grouping-construct ((t (:foreground ,tw-mg-1))))
 
- ;; Enhanced-Ruby-Mode
- '(ruby-string-delimiter-face  ((t (:foreground "#5A6340"))))
- '(ruby-regexp-delimiter-face ((t (:foreground "orange"))))
- '(ruby-heredoc-delimiter-face ((t (:foreground "#9B859D"))))
- '(ruby-op-face ((t (:foreground "#CDA869"))))
+   `(minibuffer-prompt ((t (:foreground ,tw-bg+5))))
+   `(fringe ((t (:background ,tw-bg-2 :foreground ,tw-bg+5))))
+   `(linum ((t (:background ,tw-bg :foreground ,tw-bg+3))))
+   `(linum-highlight-face ((t (:inherit linum :foreground ,tw-pale-org))))
+   `(hl-line ((t (:background ,tw-bg+2))))
+   `(mode-line ((t (:background ,tw-fg-c :foreground ,tw-bg-2 :height 0.8))))
+   `(mode-line-inactive
+     ((t (:background ,tw-bg-1 :foreground ,tw-bg+4
+          :box (:line-width -1 :color ,tw-bg+2)
+          :height 0.8))))
+   `(gui-element ((t (:background ,tw-fg-d :foreground ,tw-bg-2))))
+   `(region ((t (:background ,tw-bg+3))))
+   `(shadow ((t (:foreground ,tw-bg+4))))
+   `(highlight ((t (:background ,tw-bg-1))))
+   `(highline-face ((t (:background ,tw-cy))))
+   `(text-cursor ((t (:background ,tw-pale-org :foreground ,tw-bg-2))))
+   `(underline ((nil (:underline nil))))
+   `(yas/field-highlight-face ((t (:background ,tw-bg+2))))
+   `(mumamo-background-chunk-submode ((t (:background ,tw-bg+2))))
 
- ;; Magit
- '(magit-item-highlight ((((class color) (background dark))
-                          (:background "#212121"))))
- '(magit-header ((((class color) (background dark))
-                  (:foreground "#9B703F"))))
- '(magit-diff-add ((((class color) (background dark))
-                    (:background  "#8F9D6A"))))
- '(magit-diff-del ((((class color) (background dark))
-                    (:background "#CF6A4C"))))
+   ;; Ido
+   `(ido-subdir ((t (:foreground ,tw-rd))))
+   `(ido-first-match ((t (:foreground ,tw-med-grn))))
+   `(ido-only-match ((t (:foreground ,tw-med-grn))))
 
- ;; Org
- '(org-hide ((((background dark)) (:foreground "#141414"))))
- '(org-clock-overlay ((t (:foreground "#fff"))))
- '(outline-4 ((t (:foreground "#8F8A80"))))
+   ;; Enhanced-Ruby-Mode
+   `(ruby-string-delimiter-face  ((t (:foreground ,tw-dark-grn-1))))
+   `(ruby-regexp-delimiter-face ((t (:foreground ,tw-light-org))))
+   `(ruby-heredoc-delimiter-face ((t (:foreground ,tw-med-pur))))
+   `(ruby-op-face ((t (:foreground ,tw-pale-org))))
 
- ;; Diff
- '(diff-header ((t (:background "#5F5A60"))))
- '(diff-file-header ((t (:inherit diff-header))))
- '(diff-removed ((t (:background "#CF6A4C"))))
- '(diff-changed ((t (:background "#CDA869"))))
- '(diff-added ((t (:background  "#8F9D6A"))))
+   ;; Magit
+   `(magit-item-highlight ((((class color) (background dark))
+                            (:background ,tw-bg+2))))
+   `(magit-header ((((class color) (background dark))
+                    (:foreground ,tw-dark-org))))
+   `(magit-diff-add ((((class color) (background dark))
+                      (:background  ,tw-med-grn))))
+   `(magit-diff-del ((((class color) (background dark))
+                      (:background ,tw-rd))))
 
- ;; term
- '(term-color-black ((t (:foreground "#313131" :background "#141414"))))
- '(term-color-red ((t (:foreground "#CF6A4C" :background "#a3472c"))))
- '(term-color-green ((t (:foreground "#8F9D6A" :background "#646d4a"))))
- '(term-color-yellow ((t (:foreground "#efa510" :background "#CDA869"))))
- '(term-color-blue ((t (:foreground "#7587A6" :background "#5d6c84"))))
- '(term-color-magenta ((t (:foreground "#EE799F" :background "#EF2929"))))
- '(term-color-cyan ((t (:foreground "#5d8084" :background "#41595c"))))
- '(term-color-white ((t (:foreground "#CACACA" :background "#5F5A60"))))
- '(term-default-fg-color ((t (:inherit term-color-white))))
- '(term-default-bg-color ((t (:inherit term-color-black))))
- )
+   ;; Org
+   `(org-hide ((((background dark)) (:foreground ,tw-bg))))
+   `(org-clock-overlay ((t (:foreground ,tw-wt))))
+   `(outline-4 ((t (:foreground ,tw-bg+8))))
+
+   ;; Diff
+   `(diff-header ((t (:background ,tw-bg+5))))
+   `(diff-file-header ((t (:inherit diff-header))))
+   `(diff-removed ((t (:background ,tw-rd))))
+   `(diff-changed ((t (:background ,tw-pale-org))))
+   `(diff-added ((t (:background  ,tw-med-grn))))
+
+   ;; term
+   `(term-color-black ((t (:foreground ,tw-bg+3 :background ,tw-bg))))
+   `(term-color-red ((t (:foreground ,tw-rd :background ,tw-rd-1))))
+   `(term-color-green ((t (:foreground ,tw-med-grn :background ,tw-dark-grn))))
+   `(term-color-yellow ((t (:foreground ,tw-med-org :background ,tw-pale-org))))
+   `(term-color-blue ((t (:foreground ,tw-blu :background ,tw-blu-1))))
+   `(term-color-magenta ((t (:foreground ,tw-mg :background ,tw-mg-1))))
+   `(term-color-cyan ((t (:foreground ,tw-cy :background ,tw-cy-1))))
+   `(term-color-white ((t (:foreground ,tw-fg-c :background ,tw-bg+5))))
+   `(term-default-fg-color ((t (:inherit term-color-white))))
+   `(term-default-bg-color ((t (:inherit term-color-black))))))
 
 (provide-theme 'twilight)
 

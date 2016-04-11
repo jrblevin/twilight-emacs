@@ -164,6 +164,11 @@
    `(diff-changed ((t (:background ,tw-pale-org))))
    `(diff-added ((t (:background  ,tw-med-grn))))
 
+   ;; isearch
+   `(isearch ((t (:foreground ,tw-bg :background ,tw-light-org))))
+   `(isearch-fail ((t (:foreground ,tw-bg :background ,tw-mg-1))))
+   `(isearch-lazy-highlight-face ((t (:foreground ,tw-fg :background ,tw-blu))))
+
    ;; term
    `(term-color-black ((t (:foreground ,tw-bg+3 :background ,tw-bg))))
    `(term-color-red ((t (:foreground ,tw-rd :background ,tw-rd-1))))

@@ -169,6 +169,17 @@
    `(isearch-fail ((t (:foreground ,tw-bg :background ,tw-mg-1))))
    `(isearch-lazy-highlight-face ((t (:foreground ,tw-fg :background ,tw-blu))))
 
+   ;; flyspell
+   `(flyspell-incorrect ((t (:underline (:style wave :color ,tw-mg-1)))))
+   `(flyspell-duplicate ((t (:underline (:style wave :color ,tw-rd)))))
+
+   ;; flycheck
+   `(flycheck-error ((t (:underline (:style wave :color ,tw-mg-1)))))
+   `(flycheck-warning ((t (:underline (:style wave :color ,tw-rd)))))
+   `(flycheck-fringe-error ((t (:foreground ,tw-bg :background ,tw-mg-1))))
+   `(flycheck-fringe-info ((t (:foreground ,tw-bg :background ,tw-pale-org))))
+   `(flycheck-fringe-warning ((t (:foreground ,tw-bg :background ,tw-rd))))
+
    ;; term
    `(term-color-black ((t (:foreground ,tw-bg+3 :background ,tw-bg))))
    `(term-color-red ((t (:foreground ,tw-rd :background ,tw-rd-1))))

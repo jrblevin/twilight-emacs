@@ -180,6 +180,19 @@
    `(flycheck-fringe-info ((t (:foreground ,tw-bg :background ,tw-pale-org))))
    `(flycheck-fringe-warning ((t (:foreground ,tw-bg :background ,tw-rd))))
 
+   ;; company-mode
+   `(company-tooltip ((t (:background ,tw-bg+3 :foreground ,tw-fg))))
+   `(company-tooltip-selection ((t (:background ,tw-dark-org))))
+   `(company-tooltip-common ((t (:inherit company-tooltip :bold t))))
+   `(company-tooltip-annotation ((t (:inherit company-tooltip :foreground ,tw-rd))))
+   `(company-tooltip-common-selection ((t (:inherit company-tooltip-common :background ,tw-dark-org))))
+   `(company-tooltip-search ((t (:inherit company-tooltip-selection :foreground ,tw-bg-2))))
+   `(company-scrollbar-fg ((t (:background ,tw-bg+8))))
+   `(company-scrollbar-bg ((t (:background ,tw-bg+4))))
+   `(company-preview ((t (:background ,tw-dark-org))))
+   `(company-preview-common ((t (:inherit company-preview :foreground ,tw-wt))))
+   `(company-preview-search ((t (:inherit company-preview-common :foreground ,tw-bg-2))))
+
    ;; term
    `(term-color-black ((t (:foreground ,tw-bg+3 :background ,tw-bg))))
    `(term-color-red ((t (:foreground ,tw-rd :background ,tw-rd-1))))

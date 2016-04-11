@@ -117,7 +117,7 @@
    `(font-lock-regexp-grouping-construct ((t (:foreground ,tw-mg-1))))
 
    `(minibuffer-prompt ((t (:foreground ,tw-bg+5))))
-   `(fringe ((t (:background ,tw-bg-2 :foreground ,tw-bg+5))))
+   `(fringe ((t (:background ,tw-bg+3 :foreground ,tw-bg+8))))
    `(linum ((t (:background ,tw-bg :foreground ,tw-bg+3))))
    `(linum-highlight-face ((t (:inherit linum :foreground ,tw-pale-org))))
    `(hl-line ((t (:background ,tw-bg+2))))

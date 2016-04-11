@@ -152,16 +152,6 @@
    `(ruby-heredoc-delimiter-face ((t (:foreground ,tw-med-pur))))
    `(ruby-op-face ((t (:foreground ,tw-pale-org))))
 
-   ;; Magit
-   `(magit-item-highlight ((((class color) (background dark))
-                            (:background ,tw-bg+2))))
-   `(magit-header ((((class color) (background dark))
-                    (:foreground ,tw-dark-org))))
-   `(magit-diff-add ((((class color) (background dark))
-                      (:background  ,tw-med-grn))))
-   `(magit-diff-del ((((class color) (background dark))
-                      (:background ,tw-rd))))
-
    ;; Org
    `(org-hide ((((background dark)) (:foreground ,tw-bg))))
    `(org-clock-overlay ((t (:foreground ,tw-wt))))

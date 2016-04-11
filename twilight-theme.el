@@ -119,11 +119,10 @@
    `(linum ((t (:background ,tw-bg :foreground ,tw-bg+3))))
    `(linum-highlight-face ((t (:inherit linum :foreground ,tw-pale-org))))
    `(hl-line ((t (:background ,tw-bg+2))))
-   `(mode-line ((t (:background ,tw-fg-c :foreground ,tw-bg-2 :height 0.8))))
+   `(mode-line ((t (:background ,tw-fg-c :foreground ,tw-bg-2))))
    `(mode-line-inactive
      ((t (:background ,tw-bg-1 :foreground ,tw-bg+4
-          :box (:line-width -1 :color ,tw-bg+2)
-          :height 0.8))))
+          :box (:line-width -1 :color ,tw-bg+4)))))
    `(gui-element ((t (:background ,tw-fg-d :foreground ,tw-bg-2))))
    `(region ((t (:background ,tw-bg+3))))
    `(shadow ((t (:foreground ,tw-bg+4))))

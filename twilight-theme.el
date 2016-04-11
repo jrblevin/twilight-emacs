@@ -99,7 +99,7 @@
 
    `(font-lock-warning-face ((t (:background ,tw-mg :foreground ,tw-bg-2))))
    `(font-lock-builtin-face ((t (:foreground ,tw-fg-c))))
-   `(font-lock-comment-face ((t (:foreground ,tw-bg+5))))
+   `(font-lock-comment-face ((t (:foreground ,tw-bg+5 :italic t))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,tw-bg+5))))
    `(font-lock-constant-face ((t (:foreground ,tw-rd))))
    `(font-lock-doc-string-face ((t (:foreground ,tw-med-org))))

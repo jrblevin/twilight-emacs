@@ -212,7 +212,4 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-;; Local Variables:
-;; eval: (when (require 'rainbow-mode nil t) (setq-local rainbow-x-colors nil) (rainbow-mode 1))
-;; End:
 ;;; twilight-theme.el ends here

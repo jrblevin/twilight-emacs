@@ -161,9 +161,12 @@
    ;; Diff
    `(diff-header ((t (:background ,tw-bg+5))))
    `(diff-file-header ((t (:inherit diff-header))))
-   `(diff-removed ((t (:background ,tw-rd))))
+   `(diff-removed ((t (:background ,tw-rd-1))))
    `(diff-changed ((t (:background ,tw-pale-org))))
-   `(diff-added ((t (:background  ,tw-med-grn))))
+   `(diff-added ((t (:background  ,tw-dark-grn))))
+   `(diff-refine-added ((t (:background ,tw-med-grn))))
+   `(diff-refine-change ((t (:background ,tw-light-org))))
+   `(diff-refine-removed ((t (:background ,tw-rd))))
 
    ;; isearch
    `(isearch ((t (:foreground ,tw-bg :background ,tw-light-org))))

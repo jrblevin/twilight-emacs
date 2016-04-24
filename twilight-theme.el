@@ -168,6 +168,11 @@
    `(diff-refine-change ((t (:background ,tw-light-org))))
    `(diff-refine-removed ((t (:background ,tw-rd))))
 
+   ;; git-commit
+   `(git-commit-comment-action ((t (:foreground ,tw-med-grn :weight bold))))
+   `(git-commit-comment-branch ((t (:foreground ,tw-blu :weight bold))))
+   `(git-commit-comment-heading ((t (:foreground ,tw-pale-org :weight bold))))
+
    ;; isearch
    `(isearch ((t (:foreground ,tw-bg :background ,tw-light-org))))
    `(isearch-fail ((t (:foreground ,tw-bg :background ,tw-mg-1))))

@@ -189,6 +189,19 @@
    `(flycheck-fringe-info ((t (:foreground ,tw-bg :background ,tw-pale-org))))
    `(flycheck-fringe-warning ((t (:foreground ,tw-bg :background ,tw-rd))))
 
+   ;; AUCTeX
+   `(font-latex-bold-face ((t (:foreground ,tw-blu :inherit bold))))
+   `(font-latex-doctex-documentation-face ((t (:background ,tw-bg+3))))
+   `(font-latex-doctex-preprocessor-face ((t (:foreground ,tw-blu :inherit bold))))
+   `(font-latex-italic-face ((t (:foreground ,tw-blu :inherit italic))))
+   `(font-latex-math-face ((t (:foreground ,tw-med-org))))
+   `(font-latex-sectioning-5-face ((t (:foreground ,tw-light-org))))
+   `(font-latex-sedate-face ((t (:foreground ,tw-blu))))
+   `(font-latex-slide-title-face ((t (:foreground ,tw-blu))))
+   `(font-latex-string-face ((t (:inherit font-lock-string-face))))
+   `(font-latex-verbatim-face ((t (:foreground ,tw-rd :inherit fixed-pitch))))
+   `(font-latex-warning-face ((t (:foreground ,tw-mg-1 :inherit bold))))
+
    ;; company-mode
    `(company-tooltip ((t (:background ,tw-bg+3 :foreground ,tw-fg))))
    `(company-tooltip-selection ((t (:background ,tw-dark-org))))

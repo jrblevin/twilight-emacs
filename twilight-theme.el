@@ -140,6 +140,7 @@
    `(underline ((nil (:underline nil))))
    `(yas/field-highlight-face ((t (:background ,tw-bg+2))))
    `(mumamo-background-chunk-submode ((t (:background ,tw-bg+2))))
+   `(trailing-whitespace ((t (:background ,tw-rd :foreground ,tw-fg))))
 
    ;; Ido
    `(ido-subdir ((t (:foreground ,tw-rd))))

@@ -195,7 +195,7 @@
    `(font-latex-doctex-preprocessor-face ((t (:foreground ,tw-blu :inherit bold))))
    `(font-latex-italic-face ((t (:foreground ,tw-blu :inherit italic))))
    `(font-latex-math-face ((t (:foreground ,tw-med-org))))
-   `(font-latex-sectioning-5-face ((t (:foreground ,tw-light-org))))
+   `(font-latex-sectioning-5-face ((t (:foreground ,tw-med-org :inherit variable-pitch))))
    `(font-latex-sedate-face ((t (:foreground ,tw-blu))))
    `(font-latex-slide-title-face ((t (:foreground ,tw-blu))))
    `(font-latex-string-face ((t (:inherit font-lock-string-face))))

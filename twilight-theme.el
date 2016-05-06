@@ -131,6 +131,7 @@
    `(shadow ((t (:foreground ,tw-bg+4))))
    `(highlight ((t (:background ,tw-bg-1))))
    `(highline-face ((t (:background ,tw-cy))))
+   `(secondary-selection ((t (:background ,tw-blu-1))))
    `(link ((t :foreground ,tw-blu, :underline t)))
    `(link-visited ((t :foreground ,tw-blu-1, :underline t)))
    `(tooltip ((t (:background ,tw-fg-d :foreground ,tw-bg))))
